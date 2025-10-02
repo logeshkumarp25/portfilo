@@ -68,7 +68,7 @@ button {
 }
 
 
-.tittle {
+#tittle {
   display: flex;                 /* enable flexbox */
   justify-content: center;       /* horizontal center */
   align-items: center;           /* vertical center */
@@ -80,17 +80,17 @@ button {
   background: #f0f0f0;           /* optional background color */
 }
 
-.tittle h1 {
+#tittle h1 {
   padding: 15px;
 }
 
-.tittle h2 {
+#tittle h2 {
   padding: 15px;
   color: blue;
 }
 
 /* //tittle  */
-.tittle button {
+#tittle button {
   margin-top: 20px;
   font-size: 18px;
   background: red; /* button background color */
@@ -99,14 +99,14 @@ button {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
 }
-.tittle button:hover {
+#tittle button:hover {
   background: blue;/* button hover color */
   color: white;
   transform: scale(1.05);
 }
 
 
-.objective {
+#objective {
   max-width: 800px;
   margin: 60px auto;
   padding: 30px;
@@ -118,27 +118,27 @@ button {
   transition: transform 0.3s ease box-shadow 0.3s ease;
 }
 
-.objective:hover {
+#objective:hover {
   cursor: pointer;
   transform: scale(1.03);            
   box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
 }
 
-.objective h2 {
+#objective h2 {
   text-align: center;
   font-size: 28px;
   color: #007bff;
   margin-bottom: 15px;
 }
 
-.objective p {
+#objective p {
   text-align: justify;
   font-size: 18px;
   line-height: 1.8;
   color: #333;
 }
 
-.skills {
+#skills {
   text-align: center;
   padding: 80px 40px;
   background: #f8f9fa; /* soft HR-friendly background */
@@ -183,3 +183,101 @@ button {
   color: black;
   margin: 0;
 }
+
+/* //project */
+#projects {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;                 /* box background */
+  border: 2px solid #007bff;         /* blue border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #007bff;
+}
+#projects:hover {
+  cursor: pointer;
+  transform: scale(1.03);            
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+}
+
+#projects p {
+  margin-top: 15px
+}
+
+#education {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;                 /* box background */
+  border: 2px solid #007bff;         /* blue border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+
+#education h2 {
+  text-align: center;
+  color: #007bff;
+}
+#education:hover {
+  cursor: pointer;
+  transform: scale(1.03);            
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* deeper shadow */
+}
+
+#education h3 {
+  margin-top: 15px;
+  gap: 15px;
+}
+
+
+    .internship-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .internship {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Alternate layout */
+    .internship:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .internship img {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 0 20px;
+    }
+
+    .internship-content {
+      flex: 1;
+    }
+
+    .internship-content h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .internship-content p {
+      margin: 8px 0;
+      color: #555;
+      line-height: 1.5;
+    }
